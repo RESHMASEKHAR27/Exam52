@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+</div>
+@model Exam52.Models.Login;
+<div class="container">
+    <form asp-controller="Home" asp-action="Index" method="post">
+        <fieldset>
+            <legend>STUDENT LOGIN</legend>
+            <div>
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="email" />
+            </div>
+            <br>
+            <input value="GeneratedOTP" type="submit" />
+        </fieldset>
+    </form>
+</div>
+

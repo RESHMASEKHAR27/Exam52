@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+@model Exam52.Models.Login;
+
+<div class="Container">
+    <form asp-controller="Home" asp-action="Privacy" method="POST">
+        <fieldset>
+            <legend>STUDENT LOGIN WITH PASSWORD</legend>
+
+            <div>
+                <label asp-for="UserName"></label>
+                <input asp-for="UserName" type="text" />
+            </div>
+            <br />
+            <div>
+                <label asp-for="Password"></label>
+                <input asp-for="Password" type="password" />
+            </div>
+            <br />
+            <input type="submit" />
+
+        </fieldset>
+    </form>
+</div>
